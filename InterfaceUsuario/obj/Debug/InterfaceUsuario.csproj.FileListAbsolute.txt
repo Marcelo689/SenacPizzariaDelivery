@@ -1,0 +1,15 @@
+C:\Users\Aluno\source\repos\SenacPizzariaDelivery\InterfaceUsuario\bin\Debug\InterfaceUsuario.exe.config
+C:\Users\Aluno\source\repos\SenacPizzariaDelivery\InterfaceUsuario\bin\Debug\InterfaceUsuario.exe
+C:\Users\Aluno\source\repos\SenacPizzariaDelivery\InterfaceUsuario\bin\Debug\InterfaceUsuario.pdb
+C:\Users\Aluno\source\repos\SenacPizzariaDelivery\InterfaceUsuario\bin\Debug\Entidades.dll
+C:\Users\Aluno\source\repos\SenacPizzariaDelivery\InterfaceUsuario\bin\Debug\Negocio.dll
+C:\Users\Aluno\source\repos\SenacPizzariaDelivery\InterfaceUsuario\bin\Debug\Entidades.pdb
+C:\Users\Aluno\source\repos\SenacPizzariaDelivery\InterfaceUsuario\bin\Debug\Negocio.pdb
+C:\Users\Aluno\source\repos\SenacPizzariaDelivery\InterfaceUsuario\obj\Debug\InterfaceUsuario.csproj.AssemblyReference.cache
+C:\Users\Aluno\source\repos\SenacPizzariaDelivery\InterfaceUsuario\obj\Debug\InterfaceUsuario.MDIFrm.resources
+C:\Users\Aluno\source\repos\SenacPizzariaDelivery\InterfaceUsuario\obj\Debug\InterfaceUsuario.Properties.Resources.resources
+C:\Users\Aluno\source\repos\SenacPizzariaDelivery\InterfaceUsuario\obj\Debug\InterfaceUsuario.csproj.GenerateResource.cache
+C:\Users\Aluno\source\repos\SenacPizzariaDelivery\InterfaceUsuario\obj\Debug\InterfaceUsuario.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\source\repos\SenacPizzariaDelivery\InterfaceUsuario\obj\Debug\InterfaceUsuario.csproj.CopyComplete
+C:\Users\Aluno\source\repos\SenacPizzariaDelivery\InterfaceUsuario\obj\Debug\InterfaceUsuario.exe
+C:\Users\Aluno\source\repos\SenacPizzariaDelivery\InterfaceUsuario\obj\Debug\InterfaceUsuario.pdb
