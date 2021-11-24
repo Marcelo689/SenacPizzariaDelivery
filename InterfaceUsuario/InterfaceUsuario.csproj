@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{ABB3E7FB-0F70-46C0-AA25-7449C7274F2C}</ProjectGuid>
+    <ProjectGuid>{0D24015C-353B-4082-9586-227B75ED4E8F}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>InterfaceUsuario</RootNamespace>
     <AssemblyName>InterfaceUsuario</AssemblyName>
@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,7 +48,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>pizzaIcon.ico</ApplicationIcon>
+    <ApplicationIcon>4306482_cheese_fast_fastfood_food_italian_icon_L9g_icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -49,16 +64,69 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MDIFrm.cs">
+    <Compile Include="Login\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MDIFrm.Designer.cs">
-      <DependentUpon>MDIFrm.cs</DependentUpon>
+    <Compile Include="Login\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDIForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIForm.Designer.cs">
+      <DependentUpon>MDIForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\MascaraCampoCodigo.cs" />
+    <Compile Include="Modulos\MascaraDinheiro.cs" />
+    <Compile Include="Pesquisas\FrmPesquisaGenericaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pesquisas\FrmPesquisaGenericaCliente.Designer.cs">
+      <DependentUpon>FrmPesquisaGenericaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pesquisas\FrmPesquisaGenerica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pesquisas\FrmPesquisaGenerica.Designer.cs">
+      <DependentUpon>FrmPesquisaGenerica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pessoas\FrmCadCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pessoas\FrmCadCliente.Designer.cs">
+      <DependentUpon>FrmCadCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pessoas\FrmCadUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pessoas\FrmCadUsuarios.Designer.cs">
+      <DependentUpon>FrmCadUsuarios.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="MDIFrm.resx">
-      <DependentUpon>MDIFrm.cs</DependentUpon>
+    <Compile Include="UserControls\ucSituacao.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucSituacao.Designer.cs">
+      <DependentUpon>ucSituacao.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Login\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIForm.resx">
+      <DependentUpon>MDIForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pesquisas\FrmPesquisaGenericaCliente.resx">
+      <DependentUpon>FrmPesquisaGenericaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pesquisas\FrmPesquisaGenerica.resx">
+      <DependentUpon>FrmPesquisaGenerica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pessoas\FrmCadCliente.resx">
+      <DependentUpon>FrmCadCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pessoas\FrmCadUsuarios.resx">
+      <DependentUpon>FrmCadUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -70,6 +138,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserControls\ucSituacao.resx">
+      <DependentUpon>ucSituacao.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -85,11 +156,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Entidades\Entidades.csproj">
-      <Project>{d8eddb44-ba22-405e-875d-6a91a8b78fe9}</Project>
+      <Project>{d0725929-7015-4a91-b335-93d9dae7511c}</Project>
       <Name>Entidades</Name>
     </ProjectReference>
     <ProjectReference Include="..\Negocio\Negocio.csproj">
-      <Project>{1bb945f9-7a4d-4d87-9e13-3b3e3e2c4083}</Project>
+      <Project>{f982afa6-0026-46c8-9f06-ea53daf6c1f8}</Project>
       <Name>Negocio</Name>
     </ProjectReference>
   </ItemGroup>
@@ -133,7 +204,19 @@
     <None Include="Resources\sair.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="pizzaIcon.ico" />
+    <Content Include="4306482_cheese_fast_fastfood_food_italian_icon_L9g_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
