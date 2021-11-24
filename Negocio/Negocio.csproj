@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1BB945F9-7A4D-4D87-9E13-3B3E3E2C4083}</ProjectGuid>
+    <ProjectGuid>{F982AFA6-0026-46C8-9F06-EA53DAF6C1F8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Negocio</RootNamespace>
@@ -41,12 +41,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pessoas\TipoUsuarioNG.cs" />
+    <Compile Include="Pessoas\ClienteNG .cs" />
+    <Compile Include="Pessoas\UsuarioNG.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BaseDeDados\BaseDeDados.csproj">
-      <Project>{e7d59e1d-a7ec-4364-9494-d216088785f9}</Project>
+      <Project>{8e2022b3-d511-42c0-a63c-9a50a91c0f9f}</Project>
       <Name>BaseDeDados</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{D0725929-7015-4A91-B335-93D9DAE7511C}</Project>
+      <Name>Entidades</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
