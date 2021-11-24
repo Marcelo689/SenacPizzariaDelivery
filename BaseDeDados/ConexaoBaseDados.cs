@@ -1,7 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 using System.Configuration;
 
-
 namespace BaseDeDados
 {
     public class ConexaoBaseDados
@@ -15,9 +14,9 @@ namespace BaseDeDados
 
         public MySqlConnection getConexao()
         {
-            string conn = ConfigurationManager.ConnectionStrings["MySqlConnectionString"].ToString();
-
-            return new MySqlConnection(conn);
+            string conexao = ConfigurationManager.ConnectionStrings["MySqlConnectionString"].ToString();
+            return new MySqlConnection(conexao);
         }
+
     }
 }

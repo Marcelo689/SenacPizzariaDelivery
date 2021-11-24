@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E7D59E1D-A7EC-4364-9494-D216088785F9}</ProjectGuid>
+    <ProjectGuid>{8E2022B3-D511-42C0-A63C-9A50A91C0F9F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BaseDeDados</RootNamespace>
@@ -85,11 +85,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConexaoBaseDados.cs" />
+    <Compile Include="FuncoesBD.cs" />
+    <Compile Include="Pessoas\EnderecoClienteBD.cs" />
+    <Compile Include="Pessoas\EnderecoPadraoClienteBD.cs" />
+    <Compile Include="Pessoas\TipoUsuarioBD.cs" />
+    <Compile Include="Pessoas\ClienteBD.cs" />
+    <Compile Include="Pessoas\UsuarioBD.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Entidades\Entidades.csproj">
-      <Project>{d8eddb44-ba22-405e-875d-6a91a8b78fe9}</Project>
+      <Project>{d0725929-7015-4a91-b335-93d9dae7511c}</Project>
       <Name>Entidades</Name>
     </ProjectReference>
   </ItemGroup>
